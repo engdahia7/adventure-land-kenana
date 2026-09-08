@@ -1,0 +1,6 @@
+{
+  "name": "مغامرة أرض الكنانة: سر المخطوطة الفرعونية",
+  "description": "لعبة مغامرات تفاعلية احترافية برسومات كرتونية وشخصيات بزي فرعوني وحوارات ونقاشات مشوقة تدور في المعالم التاريخية لمصر",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

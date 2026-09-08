@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+    background-color: #0F0D0C;
+    color: #E6D2A8;
+  }
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.font-cairo {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Geometric Balance theme patterns & utilities */
+.geometric-grid-pattern {
+  background-image: repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.03) 0px, rgba(212, 175, 55, 0.03) 1px, transparent 1px, transparent 10px);
+}
+
+.geometric-radial-glow {
+  background: radial-gradient(circle at 50% 50%, #C2410C 0%, #1E1B4B 100%);
+}
+
+.geometric-border-gold {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.geometric-box-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+/* Custom adventure scrollbar matching Geometric Balance gold */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 13, 12, 0.9);
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F3E5AB;
+}
+
+/* Cinematic torchlight & ancient atmosphere */
+@keyframes torch-flicker {
+  0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.4)); }
+  25% { opacity: 0.95; filter: drop-shadow(0 0 25px rgba(243, 229, 171, 0.6)); }
+  50% { opacity: 0.8; filter: drop-shadow(0 0 12px rgba(194, 65, 12, 0.35)); }
+  75% { opacity: 0.9; filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.5)); }
+}
+
+.torch-glow {
+  animation: torch-flicker 4s infinite ease-in-out;
+}
+
+.parchment-pattern {
+  background-color: #12100e;
+  background-image: radial-gradient(#2d2217 1px, transparent 1px);
+  background-size: 16px 16px;
+}
